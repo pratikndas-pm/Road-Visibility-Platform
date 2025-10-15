@@ -1,4 +1,4 @@
-# Road Visibility Platform 🚚
+# 🚚 Road Visibility Platform
 A real-time shipment tracking and predictive ETA engine inspired by Project44 and Cargoes Flow.
 
 ## 🌍 Problem
@@ -25,7 +25,3 @@ A data lake + API aggregator that merges telematics feeds, geofences, and TMS ev
 | ETA Accuracy | 92% |
 | Delay Alerts Precision | 88% |
 | Ticket Resolution Time | ↓ 40% |
-
-## 📁 Files
-- `apis.md` – Sample request/response payloads  
-- `prd.md` – Feature breakdown and KPIs
