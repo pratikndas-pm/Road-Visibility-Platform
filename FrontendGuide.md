@@ -1,1 +1,0 @@
-(Full FrontendGuide content from previous message)
