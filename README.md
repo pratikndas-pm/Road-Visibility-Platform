@@ -1,85 +1,75 @@
-# 🚚 Road Visibility Platform  
-*AI-Driven Shipment Tracking, Predictive ETA, and Logistics Visibility Engine*
+<!-- ===================================================== -->
+<!-- 🚚 ROAD VISIBILITY PLATFORM — PROFESSIONAL README -->
+<!-- ===================================================== -->
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Tech%20Stack-React%20%7C%20FastAPI%20%7C%20AWS%20%7C%20MLflow-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Last%20Updated-October%202025-lightgrey?style=for-the-badge"/>
+
+</div>
 
 ---
 
-## 🌍 Overview
-The **Road Visibility Platform** is a real-time visibility and predictive ETA engine designed for logistics providers, freight forwarders, and port operators.  
-It integrates telematics, OEM feeds, TMS events, and contextual data (traffic, weather, and geofences) into a unified control tower that helps logistics teams make faster and smarter operational decisions.
+# 🚚 Road Visibility Platform  
+*AI-powered Predictive Logistics Platform for Real-Time Shipment Tracking & ETA Insights*
 
-> 🎯 **Vision:** To be the “Project44 for emerging markets” — delivering transparency, predictability, and automation in global logistics.
+> **Mission:** Deliver predictive logistics visibility that’s accurate, automated, and intelligent — enabling every shipper, carrier, and port to see, act, and optimize in real time.
+
+---
+
+## 🌍 Executive Summary
+
+The **Road Visibility Platform (RVP)** is a **real-time shipment tracking and predictive ETA engine** inspired by **Project44** and **Cargoes Flow**, purpose-built for freight forwarders, 3PLs, and port operators.  
+It brings together **IoT telematics, OEM feeds, EDI events, and AI** into one unified control tower — reducing uncertainty, manual intervention, and demurrage costs.
 
 ---
 
 ## ⚠️ Problem
-1. Fragmented tracking data across multiple telematics and OEM systems.  
-2. Inaccurate ETA estimates causing poor planning and demurrage costs.  
-3. Manual status checks that delay customer responses.  
-4. Lack of proactive alerts for delays or deviations.  
-5. Absence of contextual intelligence (traffic, weather, port congestion).
+
+Modern logistics suffers from:
+- Fragmented systems and siloed telematics data.  
+- Unreliable ETAs leading to costly delays.  
+- Manual “Where is my container?” workflows.  
+- No predictive visibility or contextual alerting (traffic, weather, route deviation).  
+
+> Operators spend 35–40% of their time on avoidable status checks.
 
 ---
 
 ## 💡 Solution
-A **data lake + AI-powered API layer** that consolidates shipment, telematics, and event data to provide:  
-- **Predictive ETAs** powered by ML models.  
-- **Automated delay alerts** and deviation detection.  
-- **Conversational shipment assistant** for “Where is my container?” queries.  
-- **API access** for TMS/ERP integrations.  
-- **Analytics & KPIs dashboard** for performance insights.
+
+A **data lake + ML-powered API aggregator** that consolidates multi-source logistics data to deliver:
+- **Predictive ETAs** (AI/ML-driven with confidence intervals)  
+- **Real-Time Exception Alerts** (delays, deviations, offline events)  
+- **RAG-based AI Chatbot** for instant shipment insights  
+- **KPI dashboards** for operations and business intelligence  
+- **APIs & SDKs** for partner integration  
 
 ---
 
-## ⚙️ Core Features
-| Feature | Description |
-|----------|--------------|
-| **📍 Real-Time Tracking** | Unified visibility across carriers, telematics, and OEM feeds. |
-| **⏱ Predictive ETA** | ML-based arrival predictions using XGBoost regression. |
-| **🚨 Exception Management** | Automatic alerts for delays, deviations, or offline vehicles. |
-| **💬 AI Chatbot Assistant** | LLM-based interface for shipment queries. |
-| **📊 KPI Analytics** | On-time %, Delay %, and Average ETA Accuracy. |
-| **🔗 APIs** | REST + WebSocket endpoints for developers. |
+## 🎯 Value Proposition
+
+| Stakeholder | Value Delivered |
+|--------------|----------------|
+| **Freight Forwarders** | End-to-end shipment tracking, predictive alerts |
+| **Carriers** | Reduced empty miles, optimized routing |
+| **Port Operators** | Transparent handoffs between road and port systems |
+| **Shippers** | Instant visibility and delay notifications |
+| **Developers** | Plug-and-play APIs with WebSocket streams |
 
 ---
 
-## 🧠 Tech Stack
-| Layer | Tools |
-|--------|--------|
-| **Frontend** | React, TailwindCSS, Mapbox, Zustand |
-| **Backend** | FastAPI, PostgreSQL, Redis, GraphQL |
-| **Data & ML** | Databricks, Snowflake, MLflow, XGBoost |
-| **Cloud** | AWS (ECS, Lambda, S3, CloudWatch) |
-| **AI & NLP** | RAG-based GPT Integration |
-| **CI/CD** | GitHub Actions, Docker, pytest |
-| **Analytics** | Power BI / Metabase / Grafana |
+## 🧱 Architecture Overview
 
----
-
-## 🧱 System Architecture
 ```mermaid
 flowchart LR
   A[Telematics & OEM APIs] --> B[Data Normalizer]
-  B --> C[Data Lake (Snowflake)]
-  C --> D[Predictive ETA ML Model (XGBoost)]
-  D --> E[API Gateway (FastAPI)]
-  E --> F[React Dashboard (Mapbox)]
-  E --> G[AI Chatbot (RAG Assistant)]
-  C --> H[Analytics & KPI Engine]
-| Category        | Providers                         | Update Frequency | Method       |
-| --------------- | --------------------------------- | ---------------- | ------------ |
-| **Telematics**  | Samsara, Geotab, Webfleet, Motive | 15–60 sec        | REST/Webhook |
-| **OEM Systems** | Daimler Fleetboard, Volvo Connect | 1–5 min          | OAuth API    |
-| **Ports**       | EDI-214, TOS Events               | Event-based      | SFTP/AS2     |
-| **Context**     | HERE Maps, OpenWeather            | Real-time        | REST         |
-| **Analytics**   | Power BI, Grafana                 | Daily            | API/ODBC     |
-
-
-| KPI                        | Description                   | Target   |
-| -------------------------- | ----------------------------- | -------- |
-| ETA Accuracy               | Mean Absolute Error (minutes) | ≤ 10     |
-| Delay Alerts Precision     | Precision@k                   | ≥ 88%    |
-| Customer Ticket Resolution | Reduction vs baseline         | ↓ 40%    |
-| Platform Uptime            | Availability                  | 99.9%    |
-| Data Latency               | Event → Dashboard time        | < 15s    |
-| ARR                        | Annual Recurring Revenue      | $1.2M    |
-| Monthly Active Shippers    | Growth per month              | +25% MoM |
+  B --> C[Data Lake / Snowflake]
+  C --> D[Predictive ETA Model (XGBoost)]
+  D --> E[API Gateway / FastAPI]
+  E --> F[Frontend Dashboard (React + Mapbox)]
+  E --> G[AI Chatbot (RAG Layer)]
+  C --> H[Analytics Engine (Power BI / Grafana)]
