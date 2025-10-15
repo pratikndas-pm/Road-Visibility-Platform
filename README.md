@@ -3,8 +3,6 @@
 <!-- ===================================================== -->
 
 <div align="center">
-
-<img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Tech%20Stack-React%20%7C%20FastAPI%20%7C%20AWS%20%7C%20MLflow-orange?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Last%20Updated-October%202025-lightgrey?style=for-the-badge"/>
