@@ -44,6 +44,7 @@ A **data lake + API aggregator** that merges telematics feeds, TMS events, and g
 ---
 
 ## 🧱 Architecture Overview
+
 ```mermaid
 flowchart LR
   A[Telematics & OEM APIs] --> B[Data Normalizer]
