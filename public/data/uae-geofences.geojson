@@ -1,1 +1,31 @@
-
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jebel Ali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.05,
+          25.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abu Dhabi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.4,
+          24.4
+        ]
+      }
+    }
+  ]
+}
