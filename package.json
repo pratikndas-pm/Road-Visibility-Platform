@@ -1,7 +1,7 @@
 {
-  "name": "roadiq",
+  "name": "roadiq-maplibre",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "maplibre-gl": "^3.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/maplibre-gl": "^2.4.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.3.1",
