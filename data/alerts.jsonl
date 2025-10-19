@@ -1,0 +1,16 @@
+{"alertId": "AL-7243", "shipmentId": "SHP-74001", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:46:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-8445", "shipmentId": "SHP-74002", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:22:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-2081", "shipmentId": "SHP-74004", "type": "IDLE", "severity": "LOW", "openedAt": "2025-10-15T07:58:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-3617", "shipmentId": "SHP-74006", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T08:06:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-7323", "shipmentId": "SHP-74008", "type": "IDLE", "severity": "LOW", "openedAt": "2025-10-15T07:59:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-7981", "shipmentId": "SHP-74013", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:37:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-1652", "shipmentId": "SHP-74015", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:59:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-4786", "shipmentId": "SHP-74017", "type": "IDLE", "severity": "LOW", "openedAt": "2025-10-15T07:58:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-1317", "shipmentId": "SHP-74019", "type": "IDLE", "severity": "LOW", "openedAt": "2025-10-15T08:11:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-2095", "shipmentId": "SHP-74021", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:24:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-6288", "shipmentId": "SHP-74022", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:27:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-5254", "shipmentId": "SHP-74024", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T08:00:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-9311", "shipmentId": "SHP-74027", "type": "IDLE", "severity": "LOW", "openedAt": "2025-10-15T07:43:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-1662", "shipmentId": "SHP-74028", "type": "ROUTE_DEVIATION", "severity": "HIGH", "openedAt": "2025-10-15T07:42:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-4925", "shipmentId": "SHP-74029", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T08:05:00Z", "message": "Auto-detected by RoadIQ exception engine"}
+{"alertId": "AL-8788", "shipmentId": "SHP-74030", "type": "DELAY", "severity": "MEDIUM", "openedAt": "2025-10-15T07:41:00Z", "message": "Auto-detected by RoadIQ exception engine"}

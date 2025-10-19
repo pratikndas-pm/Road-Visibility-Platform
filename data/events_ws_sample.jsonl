@@ -1,0 +1,30 @@
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74001", "carrier": "FedEx", "driver": {"id": "DRV-311", "name": "Ahmed Salem"}, "position": {"lat": 24.99819165678836, "lng": 55.41141814556163, "speedKph": 58, "ts": "2025-10-15T08:22:35Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74001", "eta": {"ts": "2025-10-15T13:20:00Z", "confidence": 0.9}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74002", "carrier": "DB Schenker", "driver": {"id": "DRV-311", "name": "Ahmed Salem"}, "position": {"lat": 24.93237248711586, "lng": 55.00607545967372, "speedKph": 51, "ts": "2025-10-15T08:22:56Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74002", "eta": {"ts": "2025-10-15T10:20:00Z", "confidence": 0.66}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74003", "carrier": "DHL", "driver": {"id": "DRV-122", "name": "Fatima Khan"}, "position": {"lat": 25.064283805094526, "lng": 55.094158071284134, "speedKph": 95, "ts": "2025-10-15T08:23:02Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74003", "eta": {"ts": "2025-10-15T14:20:00Z", "confidence": 0.85}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74004", "carrier": "Aramex", "driver": {"id": "DRV-122", "name": "Fatima Khan"}, "position": {"lat": 24.589811131906643, "lng": 54.206734374842576, "speedKph": 5, "ts": "2025-10-15T08:20:19Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74004", "eta": {"ts": "2025-10-15T13:20:00Z", "confidence": 0.87}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74005", "carrier": "Aramex", "driver": {"id": "DRV-900", "name": "Raj Verma"}, "position": {"lat": 24.924079527226347, "lng": 55.15833465805064, "speedKph": 60, "ts": "2025-10-15T08:21:37Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74005", "eta": {"ts": "2025-10-15T13:20:00Z", "confidence": 0.66}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74006", "carrier": "DHL", "driver": {"id": "DRV-311", "name": "Ahmed Salem"}, "position": {"lat": 25.383641160643297, "lng": 55.402991278426285, "speedKph": 80, "ts": "2025-10-15T08:20:33Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74006", "eta": {"ts": "2025-10-15T12:20:00Z", "confidence": 0.64}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74007", "carrier": "DHL", "driver": {"id": "DRV-122", "name": "Fatima Khan"}, "position": {"lat": 25.156540674196087, "lng": 55.24470836826688, "speedKph": 34, "ts": "2025-10-15T08:22:01Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74007", "eta": {"ts": "2025-10-15T15:20:00Z", "confidence": 0.91}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74008", "carrier": "UPS", "driver": {"id": "DRV-122", "name": "Fatima Khan"}, "position": {"lat": 25.341714210303323, "lng": 55.403281936153654, "speedKph": 0, "ts": "2025-10-15T08:21:00Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74008", "eta": {"ts": "2025-10-15T09:20:00Z", "confidence": 0.88}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74009", "carrier": "DHL", "driver": {"id": "DRV-900", "name": "Raj Verma"}, "position": {"lat": 24.97174561650086, "lng": 55.05519703208164, "speedKph": 54, "ts": "2025-10-15T08:21:27Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74009", "eta": {"ts": "2025-10-15T09:20:00Z", "confidence": 0.85}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74010", "carrier": "FedEx", "driver": {"id": "DRV-311", "name": "Ahmed Salem"}, "position": {"lat": 24.627369273863614, "lng": 54.539626661414594, "speedKph": 91, "ts": "2025-10-15T08:20:48Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74010", "eta": {"ts": "2025-10-15T11:20:00Z", "confidence": 0.61}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74011", "carrier": "DB Schenker", "driver": {"id": "DRV-900", "name": "Raj Verma"}, "position": {"lat": 25.132637968570272, "lng": 55.433453341558426, "speedKph": 43, "ts": "2025-10-15T08:23:08Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74011", "eta": {"ts": "2025-10-15T10:20:00Z", "confidence": 0.94}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74012", "carrier": "DB Schenker", "driver": {"id": "DRV-777", "name": "Liya Mathew"}, "position": {"lat": 24.304307030736926, "lng": 54.36622042558702, "speedKph": 56, "ts": "2025-10-15T08:23:00Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74012", "eta": {"ts": "2025-10-15T14:20:00Z", "confidence": 0.83}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74013", "carrier": "DB Schenker", "driver": {"id": "DRV-311", "name": "Ahmed Salem"}, "position": {"lat": 25.273910245224254, "lng": 55.43431996954288, "speedKph": 104, "ts": "2025-10-15T08:21:06Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74013", "eta": {"ts": "2025-10-15T15:20:00Z", "confidence": 0.61}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74014", "carrier": "DHL", "driver": {"id": "DRV-122", "name": "Fatima Khan"}, "position": {"lat": 24.432340096877976, "lng": 54.35386280645876, "speedKph": 0, "ts": "2025-10-15T08:20:54Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74014", "eta": {"ts": "2025-10-15T10:20:00Z", "confidence": 0.72}}
+{"event": "POSITION_UPDATE", "shipmentId": "SHP-74015", "carrier": "FedEx", "driver": {"id": "DRV-311", "name": "Ahmed Salem"}, "position": {"lat": 24.270249883875973, "lng": 54.21211119981696, "speedKph": 64, "ts": "2025-10-15T08:22:16Z"}}
+{"event": "ETA_UPDATE", "shipmentId": "SHP-74015", "eta": {"ts": "2025-10-15T11:20:00Z", "confidence": 0.66}}
