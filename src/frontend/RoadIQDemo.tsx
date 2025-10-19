@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import MapView, { ShipmentPin } from '../components/MapView';
 
 type Shipment = {
   id: string;
@@ -108,6 +109,12 @@ export default function RoadIQ() {
   const [selected, setSelected] = useState<Shipment | null>(null);
   const filtered = useMemo(() => MOCK.filter((s) => matches(s, q)), [q]);
 
+  const pins: ShipmentPin[] = filtered.map((s) => ({
+    id: s.id,
+    caption: s.carrier + ' • ' + (s.driver?.name || '') + ' • ' + String(s.position?.speedKph || 0) + ' km/h',
+    pos: { lat: s.position.lat, lng: s.position.lng }
+  }));
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <header className="border-b sticky top-0 z-40 bg-white/80 backdrop-blur">
@@ -138,34 +145,19 @@ export default function RoadIQ() {
               ))}
             </div>
           </div>
-          <div className="rounded-2xl border p-4 bg-white">
-            <div className="font-medium mb-2">Legend</div>
-            <ul className="text-sm space-y-1">
-              <li>On-Time</li>
-              <li>Idle &gt; 10m</li>
-              <li>Delayed / Deviated</li>
-              <li>Offline &gt; 5m</li>
-            </ul>
-          </div>
         </aside>
 
-        <main className="col-span-12 lg:col-span-6">
-          <div className="rounded-2xl border h-[420px] relative overflow-hidden bg-gradient-to-tr from-emerald-100/40 to-indigo-100/40">
-            <div className="absolute inset-0 grid place-items-center text-gray-500">
-              <div className="text-center">
-                <div className="text-sm uppercase tracking-wide">Map Placeholder</div>
-                <div className="text-xs">(Integrate Mapbox GL or HERE Maps)</div>
-              </div>
-            </div>
-            <div className="absolute left-12 top-14">
-              <MarkerCard s={MOCK[0]} onOpen={() => setSelected(MOCK[0])} />
-            </div>
-            <div className="absolute right-10 bottom-12">
-              <MarkerCard s={MOCK[1]} onOpen={() => setSelected(MOCK[1])} />
-            </div>
-          </div>
+        <main className="col-span-12 lg:col-span-6 space-y-4">
+          <MapView
+            pins={pins}
+            geofenceUrl="/data/geofences.geojson"
+            onPinClick={(id) => {
+              const s = filtered.find(x => x.id === id);
+              if (s) setSelected(s);
+            }}
+          />
 
-          <div className="mt-4 rounded-2xl border overflow-hidden bg-white">
+          <div className="rounded-2xl border overflow-hidden bg-white">
             <table className="w-full text-sm">
               <thead className="bg-gray-100">
                 <tr>
@@ -198,15 +190,6 @@ export default function RoadIQ() {
             <KPICard label="Avg Delay" value="12 min" sub="Last 24h" />
             <KPICard label="Uptime" value="99.95%" sub="SLA" />
           </div>
-
-          <div className="rounded-2xl border p-4 bg-white">
-            <div className="font-medium mb-2">AI Insights</div>
-            <ul className="list-disc pl-5 text-sm space-y-1">
-              <li>Late shipments predicted on Abu Dhabi to Muscat corridor.</li>
-              <li>Model drift detected; retraining scheduled at 02:00 UTC.</li>
-              <li>On-time rate strong on Jebel Ali corridor today.</li>
-            </ul>
-          </div>
         </aside>
       </div>
 
@@ -237,12 +220,12 @@ export default function RoadIQ() {
   );
 }
 
-function MarkerCard({ s, onOpen }: { s: Shipment; onOpen: () => void }) {
-  return (
-    <button className="rounded-xl border bg-white/95 backdrop-blur px-3 py-2 shadow hover:shadow-md text-left" onClick={onOpen}>
-      <div className="text-sm font-semibold">{s.id} • {s.carrier}</div>
-      <div className="text-xs">Driver: {s.driver?.name} • Speed: {s.position?.speedKph ?? 0} km/h</div>
-      <div className="text-xs text-gray-500">ETA {fmtTime(s.eta?.ts)} ({pct(s.eta?.confidence)}) • {fromNow(s.position?.ts)}</div>
-    </button>
-  );
+function StatusChip({ s }: { s: Shipment['status'] }) {
+  const map: Record<Shipment['status'], string> = {
+    IN_TRANSIT: 'bg-emerald-100 text-emerald-700',
+    IDLE: 'bg-amber-100 text-amber-800',
+    DELAYED: 'bg-red-100 text-red-700',
+    OFFLINE: 'bg-gray-200 text-gray-700',
+  };
+  return <span className={'px-2 py-0.5 rounded-full text-xs font-medium ' + map[s]}>{s}</span>;
 }
