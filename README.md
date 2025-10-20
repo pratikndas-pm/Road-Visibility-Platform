@@ -19,7 +19,7 @@
 > **Mission:** Deliver predictive logistics visibility that’s accurate, automated, and intelligent — enabling every shipper, carrier, and port to see, act, and optimize in real time.
 ## 🚀 Demo
 
-**Direct Link:** [https://road-visibility-platform-xzn7.vercel.app/login](https://road-visibility-platform-xzn7.vercel.app/login)
+**Direct Link:** [https://road-visibility-platform-xzn7.vercel.app/login](https://road-visibility-platform-vzjp.vercel.app/)
 
 
 > **Demo credentials:**  
