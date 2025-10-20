@@ -19,9 +19,10 @@
 > **Mission:** Deliver predictive logistics visibility that’s accurate, automated, and intelligent — enabling every shipper, carrier, and port to see, act, and optimize in real time.
 ## 🚀 Demo
 
-<a href="DEMO_URL_HERE" target="_blank">
-  <img src="https://road-visibility-platform-xzn7.vercel.app/dashboard"/>
-</a>
+![Vercel Deploy](https://img.shields.io/badge/Deploy%20on-Vercel-000?logo=vercel)](https://vercel.com/import)
+[![Made with React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](#)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?logo=tailwindcss&logoColor=white)](#)
+[![MapLibre GL](https://img.shields.io/badge/MapLibre%20GL-3-2b5cff?logo=data:image/svg+xml;base64,PHN2Zy8+)](#)
 
 > **Demo credentials:**  
 > Email: `forwarder@roadiq.demo` • Password: `RoadIQ@2025`
