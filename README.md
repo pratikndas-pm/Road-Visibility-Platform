@@ -20,7 +20,7 @@
 ## 🚀 Demo
 
 <a href="DEMO_URL_HERE" target="_blank">
-  <img src="https://img.shields.io/badge/Live%20Demo-Open%20RoadIQ-4f46e5?style=for-the-badge&logo=rocket&logoColor=white" alt="Live Demo"/>
+  <img src="https://road-visibility-platform-xzn7.vercel.app/dashboard"/>
 </a>
 
 > **Demo credentials:**  
