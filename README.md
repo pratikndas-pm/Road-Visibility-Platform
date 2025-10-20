@@ -17,6 +17,14 @@
 *AI-powered Predictive Logistics Platform for Real-Time Shipment Tracking & ETA Insights*
 
 > **Mission:** Deliver predictive logistics visibility that’s accurate, automated, and intelligent — enabling every shipper, carrier, and port to see, act, and optimize in real time.
+## 🚀 Demo
+
+<a href="DEMO_URL_HERE" target="_blank">
+  <img src="https://img.shields.io/badge/Live%20Demo-Open%20RoadIQ-4f46e5?style=for-the-badge&logo=rocket&logoColor=white" alt="Live Demo"/>
+</a>
+
+> **Demo credentials:**  
+> Email: `forwarder@roadiq.demo` • Password: `RoadIQ@2025`
 
 ---
 
