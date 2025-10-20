@@ -16,12 +16,12 @@ const UAEMap: React.FC<{ pins: Pin[] }> = ({ pins }) => {
     });
     pins.forEach(p => {
       const el = document.createElement('div');
-      el.className = 'bg-blue-500 text-white text-xs px-2 py-1 rounded shadow';
+      el.className = 'bg-blue-500 text-white text-[10px] px-2 py-1 rounded shadow';
       el.innerText = p.id;
       new maplibregl.Marker({ element: el }).setLngLat([p.lng, p.lat]).addTo(map);
     });
     return () => map.remove();
   }, [pins]);
-  return <div ref={ref} className="w-full h-[500px] rounded-xl border border-slate-700" />;
+  return <div ref={ref} className="w-full h-full" />;
 };
 export default UAEMap;
