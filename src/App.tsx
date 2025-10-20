@@ -6,7 +6,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        {/* Default route now opens Dashboard directly */}
+        {/* Default route opens Dashboard directly */}
         <Route path="/" element={<RoadIQ />} />
         <Route path="/dashboard" element={<RoadIQ />} />
         <Route path="*" element={<Navigate to="/" replace />} />
