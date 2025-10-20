@@ -19,7 +19,7 @@
 > **Mission:** Deliver predictive logistics visibility that’s accurate, automated, and intelligent — enabling every shipper, carrier, and port to see, act, and optimize in real time.
 ## 🚀 Demo
 
-[![RoadIQ – Click to demo](https://img.shields.io/badge/LAUNCH%20DEMO-→-Login%20Page-4f46e5?style=for-the-badge&logo=rocket&logoColor=white)](https://road-visibility-platform-xzn7.vercel.app/login)  
+**Direct Link:** [https://road-visibility-platform-xzn7.vercel.app/login](https://road-visibility-platform-xzn7.vercel.app/login)
 
 
 > **Demo credentials:**  
