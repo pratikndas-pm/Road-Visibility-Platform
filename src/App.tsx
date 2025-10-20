@@ -1,18 +1,16 @@
-
-import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import ProtectedRoute from './auth/ProtectedRoute';
-import LoginForwarder from './pages/LoginForwarder';
-import RoadIQ from './frontend/RoadIQ';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import RoadIQ from "./frontend/RoadIQ";
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Navigate to="/login" replace />} />
-      <Route path="/login" element={<LoginForwarder />} />
-      <Route element={<ProtectedRoute />}>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<RoadIQ />} />
-      </Route>
-    </Routes>
+        {/* optional: keep wildcard redirect */}
+        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      </Routes>
+    </Router>
   );
 }
