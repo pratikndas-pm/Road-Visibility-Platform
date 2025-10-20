@@ -6,10 +6,10 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        {/* Default route now opens Dashboard directly */}
+        <Route path="/" element={<RoadIQ />} />
         <Route path="/dashboard" element={<RoadIQ />} />
-        {/* optional: keep wildcard redirect */}
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
